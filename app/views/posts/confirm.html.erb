@@ -1,6 +1,6 @@
 <h3 class="confirm-title">以下の内容で投稿する</h3>
 
-<%= form_with(model: @post, local: true, url: choose_new_or_edit) do |form| %>
+<%= form_with(model: @post, local: true, url: choose_index_or_edit) do |form| %>
   <div class="post-entry">
     <%= form.hidden_field :content %>
     <p class="post-content">投稿内容:<%= @post.content %></p>

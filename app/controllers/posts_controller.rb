@@ -36,6 +36,8 @@ class PostsController < ApplicationController
 
   def confirm
     @post = Post.new(post_params)
+    @posts = Post.all
+    render :index if @post.invalid?
   end
 
 

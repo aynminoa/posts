@@ -34,6 +34,11 @@ class PostsController < ApplicationController
     redirect_to posts_path
   end
 
+  def confirm
+    @post = Post.new(post_params)
+  end
+
+
   private
 
   def post_params

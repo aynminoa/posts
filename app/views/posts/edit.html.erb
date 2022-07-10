@@ -12,8 +12,10 @@
     </div>
   <% end %>
 
-  <div class="blog_content">
+  <div class="post-entry">
     <%= form.text_field :content %>
   </div>
-  <%= form.submit "つぶやきを更新"%>
+  <div class="post-btn">
+    <%= form.submit "投稿を更新"%>
+  </div>
 <% end %>
